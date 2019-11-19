@@ -10,7 +10,6 @@ private:
 
 // 생성자
 public:
-
 	// 문자
 	yString(char c) {
 		len = 1;
@@ -42,7 +41,6 @@ public:
 
 // 연산자 오버로딩
 public:
-
 	// []
 	char& operator[](int i) {
 		return content[i];
@@ -90,7 +88,6 @@ public:
 
 // 함수
 public:
-
 	// 문자열 길이 반환
 	int length() const {
 		return len;
@@ -104,18 +101,19 @@ public:
 	}
 };
 
+// 사용 예
 int main() {
 
 	// 생성자
-	yString s1("Y");		s1.println();
-	yString s2("Yoonware");	s2.println();
-	yString s3(s2);			s3.println();
+	yString s1("Y");        s1.println();
+	yString s2("Yoonware"); s2.println();
+	yString s3(s2);         s3.println();
 
 	// 연산자 오버로딩 [], =, +=
-	s1[0] = 'y';			s1.println();
-	s2 = "Yoon's";			s2.println();
-	s3 = s2;				s3.println();
-	s3 += " Software";		s3.println();
+	s1[0] = 'y';            s1.println();
+	s2 = "Yoon's";          s2.println();
+	s3 = s2;                s3.println();
+	s3 += " Software";      s3.println();
 
 	return 0;
 }
